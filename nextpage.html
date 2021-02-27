@@ -43,9 +43,36 @@
     <div class="nextbar">
       <a class="nextbar-btn" href="./index.html">Previous page</a>
       <a class="nextbar-btn" href="./nextpage.html">Next page</a>
-       
-    </div>
+      </div>
+    <style>
+      @media screen and (max-width:768px) {
+
+    .nextbar {
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      box-sizing: border-box;
+      height: 60px;
+      padding: 10px;
+      border-radius: 25px;
+      z-index: 2;
+      width: 60%;
+    }
+    .mb-4, .my-4 {
+      margin-bottom: 0.1rem;
+    }
     
+    .nextbar-btn {
+      color: white;
+      padding: 10px;
+    }
+    
+    
+  }
+    </style>
   </nav>
   <br><br><br><br><br>
   <p>Hey there! Welcome to Just-A-Code Music</p>
