@@ -5,7 +5,7 @@
   }
   
   body {
-    background-color: #533546;
+    background-color: rgb(32, 29, 29);
     font-family: 'Space Grotesk', sans-serif;
   }
   
@@ -14,24 +14,39 @@
     color: #fff;
     /* margin-top: 20%; */
     text-align: center;
+    padding: 5px;
+    font-size: larger;
   }
   
   .container{
     text-align: center;
     margin-left: 1190px;
   }
+  
   .btn{
-    border: 1px solid black;
-    background: none;
+    border: 1px solid dodgerblue;
+    background: transparent;
     padding: 10px 20px;
     font-size: 20px;
     font-family: "montserrat";
     cursor: pointer;
     margin: 10px;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
+    border-radius: 10px;
+    color: white;
   }
+
+  .btn:hover{
+    border: 1px solid dodgerblue;
+    background: dodgerblue;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+
   .btn1,.btn2{
     color: #3498db;
   }
@@ -134,6 +149,54 @@
       width: 60%;
     }
   }
+
+  .nextbar {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 2;
+    width: 20%;
+  }
+  .mb-4, .my-4 {
+    margin-bottom: 0.1rem;
+  }
+
+  .btn{
+    border: 1px solid dodgerblue;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .btn:hover{
+    border: 1px solid dodgerblue;
+    background: dodgerblue;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .nextbar-btn {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
   
   @media screen and (max-width:768px) {
     body{
@@ -144,7 +207,7 @@
       right: 0px;
       height: 92vh;
       top: 8vh;
-      background-color: #5d4954;
+      background-color: darkcyan;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -160,6 +223,58 @@
     .burger {
       display: block;
     }
+
+    .nextbar {
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      box-sizing: border-box;
+      height: 60px;
+      padding: 10px;
+      border-radius: 25px;
+      z-index: 2;
+      width: 100%;
+    }
+    .mb-4, .my-4 {
+      margin-bottom: 0.1rem;
+    }
+    
+    .nextbar-btn {
+      color: white;
+      padding: 10px;
+    }
+
+    
+  .btn{
+    border: 1px solid dodgerblue;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-left: -5%;
+  }
+
+  .btn:hover{
+    border: 1px solid dodgerblue;
+    background: dodgerblue;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-left: -5%;
+  }
+    
+    
   }
   
   .nav-active {
@@ -210,37 +325,13 @@
   
   }
 
+  
   .brd{
-    border: 2px solid white;
-    
-}
-  @media screen and (min-width:1134px) {
-    .brd{
-      border: 2px solid white;
-      padding: 13px;
-      
-  }
+    background-color: rgb(7, 133, 192);
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 30px;
+    color: white;
 }
 
-.nextbar {
-  text-align: center;
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  box-sizing: border-box;
-  height: 60px;
-  padding: 10px;
-  border-radius: 25px;
-  z-index: 2;
-  width: 20%;
-}
-.mb-4, .my-4 {
-  margin-bottom: 0.1rem;
-}
-
-.nextbar-btn {
-  color: white;
-  padding: 10px;
-}
