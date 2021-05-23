@@ -23,28 +23,20 @@
     margin-left: 1190px;
   }
   
-  .btn{
-    border: 1px solid dodgerblue;
-    background: transparent;
+  .btn-for-section{
+    border: 2px solid dodgerblue;
+    background-color: transparent;
     padding: 10px 20px;
     font-size: 20px;
     font-family: "montserrat";
-    cursor: pointer;
     margin: 10px;
     border-radius: 10px;
     color: white;
+    
   }
 
-  .btn:hover{
-    border: 1px solid dodgerblue;
+  .btn-for-section:hover{
     background: dodgerblue;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-family: "montserrat";
-    cursor: pointer;
-    margin: 10px;
-    border-radius: 10px;
-    color: white;
   }
 
   nav{
@@ -185,7 +177,7 @@
     }
 
     
-  .btn{
+  .btn-for-section{
     border: 1px solid dodgerblue;
     background: transparent;
     padding: 10px 20px;
