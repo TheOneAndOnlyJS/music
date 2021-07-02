@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(32, 29, 29);
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+   
+  p {
+    color: #fff;
+    /* margin-top: 20%; */
+    text-align: center;
+    padding: 5px;
+    font-size: larger;
+  }
+  
+  .container{
+    text-align: center;
+    margin-left: 1190px;
+  }
+
+  .boxes{
+    background-color: rgb(9, 108, 201);
+    width: 20%;
+    margin: 3%;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+  
+  .btn-for-section{
+    border: 2px solid dodgerblue;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    
+  }
+
+  .btn-for-section:hover{
+    background: dodgerblue;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #4568b3;
+    font-family: 'Space Grotesk', sans-serif;
+    height: 75px;
+  }
+  .btngod{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    width: 150%;
+  }
+  
+  .logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 10px;
+  }
+  
+  .nav-links li{
+    list-style: none;
+  }
+  
+  .nav-links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .burger div{
+      width: 25px;
+      height: 3px;
+      background-color: rgb(226, 226, 226);
+      margin: 5px;
+      transition: all 0.3s ease;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:1024px) {
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+    }
+  }
+
+  .nextbar {
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 2;
+    width: 20%;
+  }
+  .mb-4, .my-4 {
+    margin-bottom: 0.1rem;
+  }
+  
+  .nextbar-btn {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width:768px) {
+    body{
+      overflow-x: hidden;
+    }
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: darkcyan;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(500%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    .nav-links li{
+      opacity: 0; 
+    }
+  
+    .burger {
+      display: block;
+    }
+
+    .nextbar {
+      text-align: center;
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      box-sizing: border-box;
+      height: 60px;
+      padding: 10px;
+      border-radius: 25px;
+      z-index: 2;
+      width: 100%;
+    }
+    .mb-4, .my-4 {
+      margin-bottom: 0.1rem;
+    }
+    
+    .nextbar-btn {
+      color: white;
+      padding: 10px;
+    }
+
+    
+  .btn-for-section{
+    border: 1px solid dodgerblue;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-left: -5%;
+  }
+
+  .btn:hover{
+    border: 1px solid dodgerblue;
+    background: dodgerblue;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-left: -5%;
+  }
+    
+    
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade{
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .line2 {
+    opacity: 0;
+  }
+  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
+  /* @media screen and (max-width:768px) {
+    .btn .btn-primary {
+      justify-content: center;
+    }
+  } */
+  
+  div[class='btn btn-primary'] {
+    z-index: -1;
+  }
+  
+  .btn191{
+    margin-left: 25%;
+    padding: 10px;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    width: 50%;
+  
+  }
+
+  
+  .brd{
+    background-color: rgb(7, 133, 192);
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 15px;
+    width: 30%;
+    border-radius: 30px;
+    color: white;
+    display: inline-block;
+    
+}
+
+.brd img{
+  width: 55%;
+  display: block;
+  margin: 0 auto;
+}
+
+.brd audio{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.boxes{
+    background-color: rgb(9, 108, 201);
+    width: 25%;
+    margin: 3%;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+main{
+    font-family: "Heebo", sans-serif;
+}
+
+.container{
+    background-color: #333;
+    font-family: monospace;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.logoname{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.logoimg{
+    width: 3%;
+    padding-right: 2%;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 13px;
+}
+
+.nav-list{
+    display: flex;
+    margin-left: auto;
+    padding-right: 5%;
+}
+
+.nav-links{
+    padding: 10px;
+    color: white;
+    list-style: none;
+}
+
+.nav-links-a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.boxes img{
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.boxes audio {
+  display: block;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: dodgerblue;
+}
+
+.boxes p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.boxes button{
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 10px;
+    animation: moveupndown 2s infinite;
+}
+
+.btn-position{
+    display: flex;
+    justify-content: center;
+}
+
+
