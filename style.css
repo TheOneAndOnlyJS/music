@@ -9,6 +9,14 @@
     font-family: 'Space Grotesk', sans-serif;
   }
   
+  .boxes{
+    background-color: rgb(9, 108, 201);
+    width: 27%;
+    margin: 3%;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
    
   p {
     color: #fff;
@@ -22,15 +30,6 @@
     text-align: center;
     margin-left: 1190px;
   }
-
-  .boxes{
-    background-color: rgb(9, 108, 201);
-    width: 20%;
-    margin: 3%;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-}
   
   .btn-for-section{
     border: 2px solid dodgerblue;
@@ -129,6 +128,7 @@
   .mb-4, .my-4 {
     margin-bottom: 0.1rem;
   }
+  
   
   .nextbar-btn {
     color: white;
@@ -287,16 +287,6 @@
   margin: 0 auto;
 }
 
-
-
-.boxes{
-    background-color: rgb(9, 108, 201);
-    width: 25%;
-    margin: 3%;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-}
 
 main{
     font-family: "Heebo", sans-serif;
